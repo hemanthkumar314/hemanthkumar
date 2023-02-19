@@ -1,0 +1,450 @@
+/*navbar*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    background: black;/*taskbar in lap mode*/
+    opacity: 70%;
+    height: 80px;
+    width: 100%;
+}
+
+.uli{
+    margin-left: 50%;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: beige;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff4c68;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.ax{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(226, 205, 205);
+    font-size: 70%;
+}
+
+.ax:hover{
+    background: #ff4c68;
+    transition:  .3s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;/*color for 3 lines symbol*/
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    
+    .checkbtn{
+        display: block;
+    }
+
+    .uli
+    {
+        position: fixed;
+        width: 350px;
+        height: 100vh;
+        margin: auto;
+        background: black;/*color for open of taskbar in mobile view*/
+        opacity: 70%;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover{
+        background: none;
+        color: #ff4c68;/*color of text in tb in mobile*/
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+/*TOP*/
+#title{
+    background-color: #ff4c68;
+    color: black;
+    text-align: left;
+    width: 75%;
+    margin: auto;
+    margin-top: 70px;
+    
+}
+
+.ab{
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+}
+
+.mee{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    font-size: larger;
+    font-family:cursive;
+    color: black;
+    background-color: aquamarine;
+    margin-top: 25px;
+}
+
+.mn{
+    padding-left: 30px;
+}
+
+.qw{
+    background-color: azure;
+    text-align: left;
+}
+
+.top{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.asd{
+    background-image: url('i2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.weq{
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    padding-top: 14%;
+    padding-left: 5%;
+    font-size: 3rem;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+.qwer{
+    font-family: 'Anton', sans-serif;
+    line-height: 1;
+    padding-left: 5%;
+    font-size: 3.5rem;
+}
+
+.rtyu{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding-left: 5%;
+    line-height: 1;
+}
+
+/*ABOUT*/
+
+#about{
+    text-align: center;
+}
+
+.css1{
+    background-image: url('a2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:110vh;
+    padding-top: 5%; 
+}
+
+strong{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+span{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.jk{
+
+    color: white;
+    font-size: 2rem;
+    margin: 20px;
+    text-align: center;
+}
+
+.jki{
+    width: 160px;
+}
+
+
+.img1{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.vs{
+    line-height: 2;
+    color: white;
+    font-size: large;
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Labrada', serif;
+    padding-left: 4%;
+}
+
+.as{
+    padding-left: 13%;
+}
+
+.sai{
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
+
+li{
+    font-size: larger;
+    text-align: left;
+}
+/*EDUCATION*/
+
+.des{
+    border: dotted #ff4c68 6px;
+    border-bottom: none;
+    width: 10%;
+    margin: auto;
+}
+
+.ed{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.ed:hover{
+    color: #ff4c68;
+}
+
+.iop{
+    font-size: 120%;
+    text-align: center;
+    font-family: 'Labrada', serif;
+    padding-top: 5%;
+}
+
+.jki1{
+    width: 200px;
+}
+
+.we{
+    padding: 15px;
+    width: 60%;
+    margin: auto;
+    font-size: larger;
+}
+
+.css2{
+    background-image: url('ed.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:100vh;
+    margin-top: -50px;
+}
+/*skill*/
+.mt-3{
+    padding-top: 4%;
+}
+
+.css3{
+    background-image: url('s1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:110vh;
+}
+
+.mlp{
+    color: white;
+}
+
+#skill{
+    text-align: center;
+    padding-top: 5%;
+}
+
+/*hobby*/
+.bby{
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding: 7%;
+}
+
+.css4{
+    background-image: url('h.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:110vh;
+    margin-top: -50px;
+}
+
+.hob{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin: 15px;
+    margin-top: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.hob1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+.carousel-item{
+
+    text-align: center;
+}
+
+.ert{
+    font-family: 'Labrada', serif;
+}
+
+/*footer*/
+
+.social
+{
+    margin : 20px 10px;
+}
+
+.uncolored
+{
+    background-color:#79bce9;
+}
+
+.zxc{
+    padding: 3% 15%;
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Labrada', serif;
+}
+
+.bb{
+    color: black;
+}
+
+.bb:hover{
+    color: #ff4c68;
+}
+
+.ccs6{
+    background-image: url('qq.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:90vh;
+}
+
+.dcv{
+    color: black;
+    text-decoration: none;
+    margin:auto;
+}
+
+.dcv:hover{
+    color: #ff4c68;
+}
