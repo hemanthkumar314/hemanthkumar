@@ -436,19 +436,35 @@ nav ul li a:hover::after{
     padding-top: 4%;
 }
 
-.css3{
-    background-image: url('s1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height:110vh;
-}
+
 
 @media (max-width:992px){
     .mt-3{
         width: 300px;
     }
+
+    .css3{
+        background-image: url('s1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height: 90vh;
+    }
+
+}
+
+@media (min-width:992px){
+
+    .css3{
+        background-image: url('s1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height:110vh;
+    }
+
 }
 .mlp{
     color: white;
